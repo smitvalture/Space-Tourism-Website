@@ -16,18 +16,18 @@ const Home = () => {
 
       <NavBar />
 
-      <div className='w-full h-[calc(100vh-138px)] py-14 md:py-28 lg:py-0 grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2'>
+      <div className='w-full min-h-[calc(100vh-138px)] py-14 md:py-28 lg:py-0 grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 space-y-14 md:space-y-0'>
 
         <div className='w-full h-full flex justify-center items-center'>
-          <div className='w-[450px] h-[382px] flex flex-col text-white text-center lg:text-left'>
-            <p className='font-Barlow font-light text-[28px] text-[#D0D6F9]'>SO, YOU WANT TO TRAVEL TO</p>
-            <p className='text-[150px] font-Bellefair'>SPACE</p>
-            <p className='text-lg font-thin leading-8 text-[#D0D6F9]'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+          <div className='w-[327px] h-[276px] md:w-[450px] md:h-[382px] flex flex-col text-white text-center lg:text-left'>
+            <p className='font-Barlow font-light text-base md:text-[28px] text-[#D0D6F9]'>SO, YOU WANT TO TRAVEL TO</p>
+            <p className='text-[80px] md:text-[150px] font-Bellefair'>SPACE</p>
+            <p className='text-[15px] md:text-lg font-thin leading-8 text-[#D0D6F9]'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
           </div>
         </div>
 
         <div className='w-full h-full flex justify-center items-center'>
-          <Link className='w-64 h-64 lg:mt-36 flex justify-center items-center bg-white rounded-full duration-500 outline outline-0 hover:outline-[100px] outline-white/20'>
+          <Link className='w-[150px] h-[150px] md:w-64 md:h-64 lg:mt-36 flex justify-center items-center bg-white rounded-full duration-500 outline outline-0 hover:outline-[100px] outline-white/20'>
             <p className='text-3xl tracking-[2px] font-Bellefair'>EXPLORE</p>
           </Link>
         </div>
