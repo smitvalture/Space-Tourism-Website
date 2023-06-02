@@ -7,3 +7,9 @@
 .navLink a.active {
     border-color: white;
 }
+
+.subNav a.active {
+    border-color: white;
+    color: white;
+    opacity: 0.9;
+}
