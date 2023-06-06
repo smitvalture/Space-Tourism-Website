@@ -18,10 +18,10 @@ const Destination = () => {
     const [index, setIndex] = useState(0)
 
     const handleImage = () => {
-        if (index === 0) {moonImg}
-        else if (index === 1) {marsImg}
-        else if (index === 2) {europaImg}
-        else if (index === 3) {titanImg}
+        if (index === 0) { moonImg }
+        else if (index === 1) { marsImg }
+        else if (index === 2) { europaImg }
+        else if (index === 3) { titanImg }
     }
 
 
@@ -37,30 +37,43 @@ const Destination = () => {
 
             <NavBar />
 
-            <h1 className='w-full px-40 mt-16 font-Barlow text-base text-[28px] tracking-[4.725px] leading-[34px] text-white'><span className='text-white/40 mr-3 font-extrabold'>01</span> PICK YOUR DESTINATION</h1>
+            <section className='max-w-[1280px] w-full min-h-[calc(100vh-150px)] h-full'>
+                <h1 className='w-full mt-16 font-Barlow text-base text-[28px] tracking-[4.725px] leading-[34px] text-white'><span className='text-white/40 mr-3 font-extrabold'>01</span> PICK YOUR DESTINATION</h1>
 
-            <section className='text-white w-full h-full grid grid-cols-2 place-items-center'>
+                <section className='text-white w-full h-full grid grid-cols-2 place-items-center place-content-center'>
 
-                <img src={index === 0 ? moonImg : index === 1 ? marsImg : index === 2 ? europaImg : titanImg} alt="planet Image" />
-                <div>
+                    <img className='mt-16' src={index === 0 ? (moonImg) : index === 1 ? (marsImg) : index === 2 ? (europaImg) : (titanImg)} width={"445px"} height={"445px"} alt="planet Image" />
 
-                    {/* {
-                            data.map((item, index) => (
-                                
-                                <NavLink key={index} onClick={() => setIndex(0)} to={"moon"} className='h-full flex items-center border-b-2 border-transparent text-base tracking-[2.7px] font-thin font-Barlow'>{item.name}</NavLink>
-                                ))
-                            } */}
-                    <nav className='subNav w-full h-fit flex justify-end mt-12 text-white/50 gap-9'>
+                    <div className='w-[445px] h-full flex flex-col gap-9'>
 
-                        <Link onClick={() => setIndex(0)} className={`h-full flex items-center border-b-2 border-transparent ${index === 0 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Moon"}</Link>
-                        <Link onClick={() => setIndex(1)} className={`h-full flex items-center border-b-2 border-transparent ${index === 1 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Mars"}</Link>
-                        <Link onClick={() => setIndex(2)} className={`h-full flex items-center border-b-2 border-transparent ${index === 2 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Europa"}</Link>
-                        <Link onClick={() => setIndex(3)} className={`h-full flex items-center border-b-2 border-transparent ${index === 3 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Titan"}</Link>
+                        <nav className='subNav ml-3 h-fit flex mt-12 text-white/50 gap-9'>
 
-                    </nav>
+                            <Link onClick={() => setIndex(0)} className={`h-full flex items-center border-b-2 border-transparent ${index === 0 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Moon"}</Link>
+                            <Link onClick={() => setIndex(1)} className={`h-full flex items-center border-b-2 border-transparent ${index === 1 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Mars"}</Link>
+                            <Link onClick={() => setIndex(2)} className={`h-full flex items-center border-b-2 border-transparent ${index === 2 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Europa"}</Link>
+                            <Link onClick={() => setIndex(3)} className={`h-full flex items-center border-b-2 border-transparent ${index === 3 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Titan"}</Link>
 
-                </div>
+                        </nav>
 
+                        <div className='w-full h-full flex flex-col gap-5'>
+                            <h1 className='text-[100px] font-Bellefair uppercase leading-[115px]'>{data[index]?.name}</h1>
+                            <p className='text-lg text-[#D0D6F9] leading-8'>{data[index]?.description}</p>
+                            <hr className='my-3' />
+                            <div className='grid grid-cols-2'>
+                                <div className='flex flex-col gap-3'>
+                                    <p className='text-sm text-[#D0D6F9] font-Barlow tracking-[2.36px]'>AVG. DISTANCE</p>
+                                    <p className='text-2xl leading-8 font-Bellefair uppercase'>{data[index]?.distance}</p>
+                                </div>
+                                <div className='flex flex-col gap-3'>
+                                    <p className='text-sm text-[#D0D6F9] font-Barlow tracking-[2.36px] uppercase'>Est. travel time</p>
+                                    <p className='text-2xl leading-8 font-Bellefair uppercase'>{data[index]?.travel}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
             </section>
 
         </section >
