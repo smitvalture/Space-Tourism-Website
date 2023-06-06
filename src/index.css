@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .navLink a.active {
-    border-color: white;
-}
-
-.subNav a.active {
-    border-color: white;
-    color: white;
-    opacity: 0.9;
+  border-color: white;
 }
