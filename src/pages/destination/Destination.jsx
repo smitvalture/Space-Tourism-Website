@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import deskIMG from './assets/destination/background-destination-desktop.jpg'
 import tabIMG from './assets/destination/background-destination-tablet.jpg'
 import mobIMG from './assets/destination/background-destination-mobile.jpg'
-import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import NavBar from '../../components/NavBar'
 import { space } from '../../assets/data'
 import moonImg from './assets/destination/image-moon.webp'
@@ -17,15 +17,7 @@ const Destination = () => {
     const navigate = useNavigate()
     const [index, setIndex] = useState(0)
 
-    const handleImage = () => {
-        if (index === 0) { moonImg }
-        else if (index === 1) { marsImg }
-        else if (index === 2) { europaImg }
-        else if (index === 3) { titanImg }
-    }
-
-
-    console.log(data[index]?.name);
+    //console.log(data[index]?.name);
 
     return (
         <section className='flex w-full min-h-screen h-full flex-col items-center relative'>
@@ -37,16 +29,16 @@ const Destination = () => {
 
             <NavBar />
 
-            <section className='max-w-[1280px] w-full min-h-[calc(100vh-150px)] h-full'>
-                <h1 className='w-full mt-16 font-Barlow text-base text-[28px] tracking-[4.725px] leading-[34px] text-white'><span className='text-white/40 mr-3 font-extrabold'>01</span> PICK YOUR DESTINATION</h1>
+            <section className='lg:max-w-[1280px] w-full min-h-[calc(100vh-150px)] h-full'>
+                <h1 className='w-fit my-6 md:my-10 lg:my-0 lg:mt-16 font-Barlow text-base md:text-xl lg:text-2xl mx-auto md:mx-0 md:ml-10 lg:ml-0 text-[28px] tracking-[4.725px] leading-[34px] text-white'><span className='text-white/40 mr-3 font-extrabold'>01</span> PICK YOUR DESTINATION</h1>
 
-                <section className='text-white w-full h-full grid grid-cols-2 place-items-center place-content-center'>
+                <section className='text-white -mt-5 lg:mt-0 w-full h-full flex flex-col lg:grid text-center lg:text-left lg:grid-cols-2 place-items-center place-content-center'>
 
-                    <img className='mt-16' src={index === 0 ? (moonImg) : index === 1 ? (marsImg) : index === 2 ? (europaImg) : (titanImg)} width={"445px"} height={"445px"} alt="planet Image" />
+                    <img className='my-6 md:my-14 lg:my-0 lg:mt-16 lg:w-[445px] lg:h-[445px] md:w-[300px] md:h-[300px] w-[170px] h-[170px]' src={index === 0 ? (moonImg) : index === 1 ? (marsImg) : index === 2 ? (europaImg) : (titanImg)} alt="planet Image" />
 
-                    <div className='w-[445px] h-full flex flex-col gap-9'>
+                    <div className='w-[327px] md:w-[445px] h-full flex flex-col items-center lg:items-start gap-9 md:pb-14 lg:pb-0'>
 
-                        <nav className='subNav ml-3 h-fit flex mt-12 text-white/50 gap-9'>
+                        <nav className='subNav lg:ml-3 h-11 text-sm md:text-base flex lg:mt-12 text-white/50 gap-9'>
 
                             <Link onClick={() => setIndex(0)} className={`h-full flex items-center border-b-2 border-transparent ${index === 0 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Moon"}</Link>
                             <Link onClick={() => setIndex(1)} className={`h-full flex items-center border-b-2 border-transparent ${index === 1 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Mars"}</Link>
@@ -56,10 +48,10 @@ const Destination = () => {
                         </nav>
 
                         <div className='w-full h-full flex flex-col gap-5'>
-                            <h1 className='text-[100px] font-Bellefair uppercase leading-[115px]'>{data[index]?.name}</h1>
-                            <p className='text-lg text-[#D0D6F9] leading-8'>{data[index]?.description}</p>
-                            <hr className='my-3' />
-                            <div className='grid grid-cols-2'>
+                            <h1 className='text-6xl md:text-[80px] lg:text-[100px] font-Bellefair uppercase leading-[115px]'>{data[index]?.name}</h1>
+                            <p className='text-sm md:text-base lg:text-lg text-[#D0D6F9] leading-8'>{data[index]?.description}</p>
+                            <div className='my-3 lg:mt-8 h-0.5 w-full bg-white/30'></div>
+                            <div className='flex flex-col gap-8 md:gap-0 md:grid md:grid-cols-2'>
                                 <div className='flex flex-col gap-3'>
                                     <p className='text-sm text-[#D0D6F9] font-Barlow tracking-[2.36px]'>AVG. DISTANCE</p>
                                     <p className='text-2xl leading-8 font-Bellefair uppercase'>{data[index]?.distance}</p>

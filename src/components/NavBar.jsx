@@ -45,7 +45,7 @@ const NavBar = () => {
 
                 <div className='absolute hidden lg:block left-40 w-[36%] z-10 h-[1px] bg-white/20'></div>
 
-                <div className='h-24 lg:w-7/12 lg:pl-32 md:px-12 lg:px-0 flex gap-12 justify-start items-center backdrop-blur-lg border-[1px] border-solid border-white border-opacity-[0.04] bg-white/5 text-white/70'>
+                <div className='h-24 lg:w-7/12 lg:pl-32 md:px-12 lg:px-0 flex md:gap-9 lg:gap-12 justify-start items-center backdrop-blur-lg border-[1px] border-solid border-white border-opacity-[0.04] bg-white/5 text-white/70'>
                     <NavLink to={"/"} className='h-full flex items-center border-b-2 border-transparent focus:border-white hover:border-white/25 text-base tracking-[2.7px] font-thin font-Barlow'><span className='font-bold mr-2 text-white'>00</span> HOME</NavLink>
                     <NavLink to={"/destination"} className='h-full flex items-center border-b-2 border-transparent focus:border-white hover:border-white/25 text-base tracking-[2.7px] font-thin font-Barlow'><span className='font-bold mr-2 text-white'>01</span> DESTINATION</NavLink>
                     <NavLink to={"/crew"} className='h-full flex items-center border-b-2 border-transparent focus:border-white hover:border-white/25 text-base tracking-[2.7px] font-thin font-Barlow'><span className='font-bold mr-2 text-white'>02</span> CREW</NavLink>

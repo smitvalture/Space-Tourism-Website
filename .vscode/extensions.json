@@ -1,5 +1,10 @@
 {
     "recommendations": [
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss",
+        "alduncanson.react-hooks-snippets",
+        "rodrigovallades.es7-react-js-snippets",
+        "planbcoding.vscode-react-refactor",
+        "quicktype.quicktype",
+        "developer2006.svg-gallery"
     ]
 }
