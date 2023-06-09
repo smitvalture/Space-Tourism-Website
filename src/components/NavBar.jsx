@@ -37,7 +37,7 @@ const NavBar = () => {
     return (
         <>
             {/* desktop & tablet Navigation */}
-            <nav className='hidden md:flex navLink justify-between items-center w-full lg:pl-14 pl-6 lg:mt-10 relative'>
+            <nav className='hidden md:flex z-50 navLink justify-between items-center w-full lg:pl-14 pl-6 lg:mt-10 relative'>
 
                 <Link to={"/"} className='w-12 h-12 rounded-full overflow-hidden duration-500 hover:scale-90 hover:rotate-180'>
                     <img className='' src={star} alt="star img" />

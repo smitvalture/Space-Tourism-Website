@@ -7,16 +7,16 @@ import NavBar from '../components/NavBar'
 
 const Home = () => {
   return (
-    <section className='flex w-full min-h-screen h-full flex-col items-center relative'>
+    <section className='flex bg-[#020410] w-full min-h-screen h-full flex-col items-center relative'>
 
-      <img className='hidden lg:block min-h-full min-w-[1024px] w-full h-auto fixed -z-50 top-0 left-0 contrast-[1.10]' src={deskIMG} alt="home img" />
+      <img className='hidden lg:block min-h-full min-w-[1024px] w-full h-auto fixed top-0 left-0 contrast-[1.10]' src={deskIMG} alt="home img" />
       <img className='hidden md:block lg:hidden min-h-full min-w-[768px] w-full h-auto fixed -z-50 top-0 left-0 contrast-[1.10] scale-105' src={tabIMG} alt="home img" />
       <img className='block md:hidden min-h-full min-w-[640px] w-full h-auto fixed -z-50 top-0 left-0 contrast-[1.10]' src={mobIMG} alt="home img" />
 
 
       <NavBar />
 
-      <div className='w-full min-h-[calc(100vh-138px)] py-14 md:py-28 lg:py-0 grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 space-y-14 md:space-y-0'>
+      <div className='w-full min-h-[calc(100vh-138px)] z-10 py-14 md:py-28 lg:py-0 grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 space-y-14 md:space-y-0'>
 
         <div className='w-full h-full flex justify-center items-center'>
           <div className='w-[327px] h-[276px] md:w-[450px] md:h-[382px] flex flex-col text-white text-center lg:text-left'>

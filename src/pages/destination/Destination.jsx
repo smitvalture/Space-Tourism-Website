@@ -20,16 +20,16 @@ const Destination = () => {
     //console.log(data[index]?.name);
 
     return (
-        <section className='flex w-full min-h-screen h-full flex-col items-center relative'>
+        <section className='flex bg-[#00030b] w-full min-h-screen h-full flex-col items-center relative'>
 
-            <img className='hidden lg:block min-h-full min-w-[1024px] w-full h-auto fixed -z-50 top-0 left-0 contrast-[1.10]' src={deskIMG} alt="destination img" />
+            <img className='hidden lg:block min-h-full min-w-[1024px] w-full h-auto fixed top-0 left-0 contrast-[1.10]' src={deskIMG} alt="destination img" />
             <img className='hidden md:block lg:hidden min-h-full min-w-[768px] w-full h-auto fixed -z-50 top-0 left-0 contrast-[1.10] scale-105' src={tabIMG} alt="destination img" />
             <img className='block md:hidden min-h-full w-full h-auto fixed -z-50 top-0 left-0 contrast-[1.10] scale-105' src={mobIMG} alt="destination img" />
 
 
             <NavBar />
 
-            <section className='lg:max-w-[1280px] w-full min-h-[calc(100vh-150px)] h-full'>
+            <section className='lg:max-w-[1280px] z-10 w-full min-h-[calc(100vh-150px)] h-full'>
                 <h1 className='w-fit my-6 md:my-10 lg:my-0 lg:mt-16 font-Barlow text-base md:text-xl lg:text-2xl mx-auto md:mx-0 md:ml-10 lg:ml-0 text-[28px] tracking-[4.725px] leading-[34px] text-white'><span className='text-white/40 mr-3 font-extrabold'>01</span> PICK YOUR DESTINATION</h1>
 
                 <section className='text-white -mt-5 lg:mt-0 w-full h-full flex flex-col lg:grid text-center lg:text-left lg:grid-cols-2 place-items-center place-content-center'>
