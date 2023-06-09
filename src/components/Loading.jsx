@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Loading = () => {
 
     return (
-        <div className="absolute z-[100] flex items-center justify-center w-full min-h-screen h-full bg-black/75">
+        <div className="fixed z-[100] flex items-center justify-center w-full min-h-screen bg-black/75">
             <div className="flex flex-col items-center">
                 <svg
                     className="animate-spin h-10 w-10 text-white mb-4"
