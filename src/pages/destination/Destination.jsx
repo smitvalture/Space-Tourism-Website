@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import deskIMG from './assets/destination/background-destination-desktop.jpg'
-import tabIMG from './assets/destination/background-destination-tablet.jpg'
-import mobIMG from './assets/destination/background-destination-mobile.jpg'
+import deskIMG from '../../assets/destination/background-destination-desktop.jpg'
+import tabIMG from '../../assets/destination/background-destination-tablet.jpg'
+import mobIMG from '../../assets/destination/background-destination-mobile.jpg'
 import { Link, useNavigate } from 'react-router-dom'
 import NavBar from '../../components/NavBar'
 import { space } from '../../assets/data'
-import moonImg from './assets/destination/image-moon.webp'
-import marsImg from './assets/destination/image-mars.webp'
-import europaImg from './assets/destination/image-europa.webp'
-import titanImg from './assets/destination/image-titan.webp'
+import moonImg from '../../assets/destination/image-moon.webp'
+import marsImg from '../../assets/destination/image-mars.webp'
+import europaImg from '../../assets/destination/image-europa.webp'
+import titanImg from '../../assets/destination/image-titan.webp'
 import Loading from '../../components/Loading'
 
 
@@ -38,7 +38,6 @@ const Destination = () => {
 
         return () => clearTimeout(timer);
     }
-
 
     //console.log(data[index]?.name);
 

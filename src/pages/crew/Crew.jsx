@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import deskIMG from './assets/crew/background-crew-desktop.jpg'
-import tabIMG from './assets/crew/background-crew-tablet.jpg'
-import mobIMG from './assets/crew/background-crew-mobile.jpg'
+import deskIMG from '../../assets/crew/background-crew-desktop.jpg'
+import tabIMG from '../../assets/crew/background-crew-tablet.jpg'
+import mobIMG from '../../assets/crew/background-crew-mobile.jpg'
 import { Link, useNavigate } from 'react-router-dom'
 import NavBar from '../../components/NavBar'
 import { space } from '../../assets/data'
 import Loading from '../../components/Loading'
-import anoushehImg from './assets/crew/image-anousheh-ansari.webp'
-import douglasImg from './assets/crew/image-douglas-hurley.webp'
-import markImg from './assets/crew/image-mark-shuttleworth.webp'
-import victorImg from './assets/crew/image-victor-glover.webp'
+import anoushehImg from '../../assets/crew/image-anousheh-ansari.webp'
+import douglasImg from '../../assets/crew/image-douglas-hurley.webp'
+import markImg from '../../assets/crew/image-mark-shuttleworth.webp'
+import victorImg from '../../assets/crew/image-victor-glover.webp'
 
 const Crew = () => {
 
     const data = space.crew
     const navigate = useNavigate()
     const [index, setIndex] = useState(0)
-
 
     const [isLoading, setIsLoading] = useState(false);
 
@@ -37,7 +36,6 @@ const Crew = () => {
 
         return () => clearTimeout(timer);
     }
-
 
     //console.log(data[index]?.name);
 
