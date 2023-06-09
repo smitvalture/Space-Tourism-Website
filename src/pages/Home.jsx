@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import deskIMG from '../assets/home/background-home-desktop.png'
 import tabIMG from '../assets/home/background-home-tablet.jpg'
 import mobIMG from '../assets/home/background-home-mobile.jpg'
@@ -10,14 +10,15 @@ const Home = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleLoading = () => {
-    setIsLoading(true);
+  useEffect(() => {
+    setIsLoading(true)
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer);
-  }
+  }, []);
+
 
 
   return (

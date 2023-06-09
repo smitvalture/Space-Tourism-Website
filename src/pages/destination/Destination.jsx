@@ -21,6 +21,15 @@ const Destination = () => {
 
     const [isLoading, setIsLoading] = useState(false);
 
+    useEffect(() => {
+        setIsLoading(true)
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     const handleLoading = (time) => {
         setIsLoading(true);
         const timer = setTimeout(() => {
@@ -55,10 +64,10 @@ const Destination = () => {
 
                         <nav className='subNav lg:ml-3 h-11 text-sm md:text-base flex lg:mt-12 text-white/50 gap-9'>
 
-                            <Link onClick={() => {setIndex(0); handleLoading(1500)}} className={`h-full flex items-center border-b-2 border-transparent ${index === 0 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Moon"}</Link>
-                            <Link onClick={() => {setIndex(1); handleLoading(1500)}} className={`h-full flex items-center border-b-2 border-transparent ${index === 1 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Mars"}</Link>
-                            <Link onClick={() => {setIndex(2); handleLoading(1500)}} className={`h-full flex items-center border-b-2 border-transparent ${index === 2 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Europa"}</Link>
-                            <Link onClick={() => {setIndex(3); handleLoading(1500)}} className={`h-full flex items-center border-b-2 border-transparent ${index === 3 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Titan"}</Link>
+                            <Link onClick={() => { setIndex(0); handleLoading(1500) }} className={`h-full flex items-center border-b-2 border-transparent ${index === 0 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Moon"}</Link>
+                            <Link onClick={() => { setIndex(1); handleLoading(1500) }} className={`h-full flex items-center border-b-2 border-transparent ${index === 1 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Mars"}</Link>
+                            <Link onClick={() => { setIndex(2); handleLoading(1500) }} className={`h-full flex items-center border-b-2 border-transparent ${index === 2 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Europa"}</Link>
+                            <Link onClick={() => { setIndex(3); handleLoading(1500) }} className={`h-full flex items-center border-b-2 border-transparent ${index === 3 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Titan"}</Link>
 
                         </nav>
 
