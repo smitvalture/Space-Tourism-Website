@@ -9,6 +9,7 @@ import moonImg from './assets/destination/image-moon.webp'
 import marsImg from './assets/destination/image-mars.webp'
 import europaImg from './assets/destination/image-europa.webp'
 import titanImg from './assets/destination/image-titan.webp'
+import Loading from '../../components/Loading'
 
 
 const Destination = () => {
@@ -17,11 +18,24 @@ const Destination = () => {
     const navigate = useNavigate()
     const [index, setIndex] = useState(0)
 
+
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleLoading = (time) => {
+        setIsLoading(true);
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, time);
+
+        return () => clearTimeout(timer);
+    }
+
+
     //console.log(data[index]?.name);
 
     return (
         <section className='flex bg-[#00030b] w-full min-h-screen h-full flex-col items-center relative'>
-
+            {isLoading && <Loading />}
             <div className="image-container overflow-hidden w-screen min-h-screen h-full absolute bg-no-repeat">
                 <img className='hidden lg:block min-h-full min-w-[1024px] w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 contrast-[1.10]' src={deskIMG} alt="home img" />
                 <img className='hidden md:block lg:hidden min-h-full min-w-[768px] w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 contrast-[1.10] scale-105' src={tabIMG} alt="home img" />
@@ -41,10 +55,10 @@ const Destination = () => {
 
                         <nav className='subNav lg:ml-3 h-11 text-sm md:text-base flex lg:mt-12 text-white/50 gap-9'>
 
-                            <Link onClick={() => setIndex(0)} className={`h-full flex items-center border-b-2 border-transparent ${index === 0 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Moon"}</Link>
-                            <Link onClick={() => setIndex(1)} className={`h-full flex items-center border-b-2 border-transparent ${index === 1 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Mars"}</Link>
-                            <Link onClick={() => setIndex(2)} className={`h-full flex items-center border-b-2 border-transparent ${index === 2 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Europa"}</Link>
-                            <Link onClick={() => setIndex(3)} className={`h-full flex items-center border-b-2 border-transparent ${index === 3 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Titan"}</Link>
+                            <Link onClick={() => {setIndex(0); handleLoading(1500)}} className={`h-full flex items-center border-b-2 border-transparent ${index === 0 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Moon"}</Link>
+                            <Link onClick={() => {setIndex(1); handleLoading(1500)}} className={`h-full flex items-center border-b-2 border-transparent ${index === 1 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Mars"}</Link>
+                            <Link onClick={() => {setIndex(2); handleLoading(1500)}} className={`h-full flex items-center border-b-2 border-transparent ${index === 2 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Europa"}</Link>
+                            <Link onClick={() => {setIndex(3); handleLoading(1500)}} className={`h-full flex items-center border-b-2 border-transparent ${index === 3 ? "text-white border-white" : "hover:border-white/25"} text-base tracking-[2.7px] font-thin font-Barlow`}>{"Titan"}</Link>
 
                         </nav>
 

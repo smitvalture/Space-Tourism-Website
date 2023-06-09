@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import deskIMG from '../assets/home/background-home-desktop.png'
 import tabIMG from '../assets/home/background-home-tablet.jpg'
 import mobIMG from '../assets/home/background-home-mobile.jpg'
 import { Link } from 'react-router-dom'
 import NavBar from '../components/NavBar'
+import Loading from '../components/Loading'
 
 const Home = () => {
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleLoading = () => {
+    setIsLoading(true);
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }
+
+
   return (
     <section className='flex bg-[#020410] w-full min-h-screen h-full flex-col items-center relative'>
-
+      {isLoading && <Loading />}
       <div className="image-container overflow-hidden w-screen min-h-screen h-full absolute bg-no-repeat">
         <img className='hidden lg:block min-h-full min-w-[1024px] w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 contrast-[1.10]' src={deskIMG} alt="home img" />
         <img className='hidden md:block lg:hidden min-h-full min-w-[768px] w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 contrast-[1.10] scale-105' src={tabIMG} alt="home img" />
