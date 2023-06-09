@@ -23,8 +23,8 @@ const Destination = () => {
         <section className='flex bg-[#00030b] w-full min-h-screen h-full flex-col items-center relative'>
 
             <img className='hidden lg:block min-h-full min-w-[1024px] w-full h-auto fixed top-0 left-0 contrast-[1.10]' src={deskIMG} alt="destination img" />
-            <img className='hidden md:block lg:hidden min-h-full min-w-[768px] w-full h-auto fixed -z-50 top-0 left-0 contrast-[1.10] scale-105' src={tabIMG} alt="destination img" />
-            <img className='block md:hidden min-h-full w-full h-auto fixed -z-50 top-0 left-0 contrast-[1.10] scale-105' src={mobIMG} alt="destination img" />
+            <img className='hidden md:block lg:hidden min-h-full min-w-[768px] w-full h-auto fixed top-0 left-0 contrast-[1.10] scale-105' src={tabIMG} alt="destination img" />
+            <img className='block md:hidden min-h-full w-full h-auto fixed top-0 left-0 contrast-[1.10] scale-105' src={mobIMG} alt="destination img" />
 
 
             <NavBar />

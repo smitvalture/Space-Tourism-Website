@@ -10,8 +10,8 @@ const Home = () => {
     <section className='flex bg-[#020410] w-full min-h-screen h-full flex-col items-center relative'>
 
       <img className='hidden lg:block min-h-full min-w-[1024px] w-full h-auto fixed top-0 left-0 contrast-[1.10]' src={deskIMG} alt="home img" />
-      <img className='hidden md:block lg:hidden min-h-full min-w-[768px] w-full h-auto fixed -z-50 top-0 left-0 contrast-[1.10] scale-105' src={tabIMG} alt="home img" />
-      <img className='block md:hidden min-h-full min-w-[640px] w-full h-auto fixed -z-50 top-0 left-0 contrast-[1.10]' src={mobIMG} alt="home img" />
+      <img className='hidden md:block lg:hidden min-h-full min-w-[768px] w-full h-auto fixed top-0 left-0 contrast-[1.10] scale-105' src={tabIMG} alt="home img" />
+      <img className='block md:hidden min-h-full min-w-[640px] w-full h-auto fixed top-0 left-0 contrast-[1.10]' src={mobIMG} alt="home img" />
 
 
       <NavBar />
