@@ -60,7 +60,7 @@ const Destination = () => {
 
                     <img className='my-6 md:my-14 lg:my-0 lg:mt-16 lg:w-[445px] lg:h-[445px] md:w-[300px] md:h-[300px] w-[170px] h-[170px]' src={index === 0 ? (moonImg) : index === 1 ? (marsImg) : index === 2 ? (europaImg) : (titanImg)} alt="planet Image" />
 
-                    <div className='w-[327px] md:w-[445px] h-full flex flex-col items-center lg:items-start gap-9 md:pb-14 lg:pb-0'>
+                    <div className='w-[327px] md:w-[445px] h-full flex flex-col items-center lg:items-start gap-9 pb-14 lg:pb-0'>
 
                         <nav className='subNav lg:ml-3 h-11 text-sm md:text-base flex lg:mt-12 text-white/50 gap-9'>
 
