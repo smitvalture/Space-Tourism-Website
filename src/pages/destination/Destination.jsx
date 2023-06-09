@@ -46,7 +46,7 @@ const Destination = () => {
             {isLoading && <Loading />}
             <div className="image-container overflow-hidden w-screen min-h-screen h-full absolute bg-no-repeat">
                 <img className='hidden lg:block min-h-full min-w-[1024px] w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 contrast-[1.10]' src={deskIMG} alt="home img" />
-                <img className='hidden md:block lg:hidden min-h-full min-w-[768px] w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 contrast-[1.10] scale-105' src={tabIMG} alt="home img" />
+                <img className='hidden md:block lg:hidden min-h-full min-w-[768px] w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 contrast-[1.10]' src={tabIMG} alt="home img" />
                 <img className='block md:hidden min-h-full min-w-[640px] w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 contrast-[1.10]' src={mobIMG} alt="home img" />
             </div>
 
