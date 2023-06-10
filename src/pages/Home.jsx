@@ -38,7 +38,7 @@ const Home = () => {
           <div className='w-[327px] h-[276px] md:w-[450px] md:h-[382px] flex flex-col text-white text-center lg:text-left'>
             <p className='font-Barlow font-light text-base md:text-[28px] text-[#D0D6F9]'>SO, YOU WANT TO TRAVEL TO</p>
             <p className='text-[80px] md:text-[150px] font-Bellefair'>SPACE</p>
-            <p className='text-[15px] lg::text-lg font-thin leading-8 text-[#D0D6F9]'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+            <p className='text-[15px] lg:text-lg font-thin leading-8 text-[#D0D6F9]'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
           </div>
         </div>
 
