@@ -65,7 +65,7 @@ const Technology = () => {
           <img className='block lg:hidden mt-8 md:mt-10 md:h-[350px] h-[223px]' src={index === 0 ? (launchImg) : index === 1 ? (spaceImg) : (spaceportImg)} alt="planet Image" />
 
           <div className='flex flex-col lg:flex-row lg:gap-20 lg:order-1 mt-8 md:mt-0'>
-            <div className='flex lg:flex-col gap-4 items-center justify-center lg:justify-center md:mt-10 lg:mt-0'>
+            <div className='flex lg:flex-col gap-4 lg:gap-8 items-center justify-center lg:justify-center md:mt-10 lg:mt-0'>
               <p onClick={() => { setIndex(0); }} className={`w-[40px] h-[40px] md:w-[60px] md:h-[60px] lg:w-20 lg:h-20 text-2xl flex items-center justify-center -mt-1 duration-500 ${index === 0 ? "bg-white scale-110 text-black font-bold" : "bg-white/5 border border-white/20"} cursor-pointer rounded-full overflow-hidden`}>1</p>
               <p onClick={() => { setIndex(1); }} className={`w-[40px] h-[40px] md:w-[60px] md:h-[60px] lg:w-20 lg:h-20 text-2xl flex items-center justify-center -mt-1 duration-500 ${index === 1 ? "bg-white scale-110 text-black font-bold" : "bg-white/5 border border-white/20"} cursor-pointer rounded-full overflow-hidden`}>2</p>
               <p onClick={() => { setIndex(2); }} className={`w-[40px] h-[40px] md:w-[60px] md:h-[60px] lg:w-20 lg:h-20 text-2xl flex items-center justify-center -mt-1 duration-500 ${index === 2 ? "bg-white scale-110 text-black font-bold" : "bg-white/5 border border-white/20"} cursor-pointer rounded-full overflow-hidden`}>3</p>
