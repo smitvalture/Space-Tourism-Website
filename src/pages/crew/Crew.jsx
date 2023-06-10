@@ -69,7 +69,7 @@ const Crew = () => {
 
                             <h3 className='md:text-2xl lg:text-[32px] uppercase font-Bellefair text-white/50 md:leading-7'>{data[index]?.role}</h3>
                             <h1 className='text-2xl md:text-[40px] lg:text-[56px] font-Bellefair uppercase leading-7 md:leading-10 lg:leading-[64px] mt-2'>{data[index]?.name}</h1>
-                            <p className='text-sm md:text-base lg:text-lg text-[#D0D6F9] leading-6 md:leading-7 lg:leading-8 mt-4'>{data[index]?.bio}</p>
+                            <p className='text-[15px] md:text-base lg:text-lg text-[#D0D6F9] leading-6 md:leading-7 lg:leading-8 mt-4'>{data[index]?.bio}</p>
 
                         </div>
                     </div>
