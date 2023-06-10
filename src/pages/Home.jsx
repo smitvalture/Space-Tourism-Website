@@ -43,8 +43,8 @@ const Home = () => {
         </div>
 
         <div className='w-full h-full flex justify-center items-center'>
-          <Link to={"/destination"} className='w-[150px] h-[150px] md:w-64 md:h-64 lg:mt-36 flex justify-center items-center bg-white rounded-full duration-500 outline outline-0 hover:outline-[100px] outline-white/20'>
-            <p className='text-3xl tracking-[2px] font-Bellefair'>EXPLORE</p>
+          <Link to={"/destination"} className='lg:w-[274px] lg:h-[274px] md:w-[242px] md:h-[242px] w-[150px] h-[150px] lg:mt-36 flex justify-center items-center bg-white rounded-full duration-500 outline outline-0 md:hover:outline-[100px] outline-white/20'>
+            <p className='text-[20px] md:text-3xl tracking-[2px] font-Bellefair'>EXPLORE</p>
           </Link>
         </div>
 
