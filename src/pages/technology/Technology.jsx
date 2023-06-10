@@ -74,7 +74,7 @@ const Technology = () => {
 
               <h3 className='uppercase font-Bellefair text-[#D0D6F9] md:leading-7'>THE TERMINOLOGY…</h3>
               <h1 className='text-2xl md:text-[40px] lg:text-[56px] font-Bellefair uppercase leading-7 md:leading-10 lg:leading-[64px] mt-2'>{data[index]?.name}</h1>
-              <p className='w-[327px] md:w-[458px] lg:w[470px] text-[15px] md:text-base lg:text-lg text-[#D0D6F9] leading-6 md:leading-7 lg:leading-8 mt-4'>{data[index]?.description}</p>
+              <p className='w-[327px] md:w-[458px] lg:w-[470px] text-[15px] md:text-base lg:text-lg text-[#D0D6F9] leading-6 md:leading-7 lg:leading-8 mt-4'>{data[index]?.description}</p>
 
             </div>
           </div>
