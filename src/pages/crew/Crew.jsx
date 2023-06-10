@@ -55,7 +55,7 @@ const Crew = () => {
 
                 <section className='text-white w-full h-full flex flex-col md:flex-col-reverse text-center lg:text-left lg:grid lg:grid-cols-2 place-items-center place-content-center'>
 
-                    <img className='lg:order-2 mt-8 md:mt-10 lg:mt-0 lg:h-[681px] md:h-[572px] h-[223px]' src={index === 0 ? (douglasImg) : index === 1 ? (markImg) : index === 2 ? (victorImg) : (anoushehImg)} alt="planet Image" />
+                    <img className='lg:order-2 mt-8 md:mt-10 lg:mt-0 md:h-[572px] h-[223px]' src={index === 0 ? (douglasImg) : index === 1 ? (markImg) : index === 2 ? (victorImg) : (anoushehImg)} alt="planet Image" />
                     <div className='md:hidden h-0.5 w-4/5 mx-auto bg-white/30'></div>
 
                     <div className='lg:order-1 flex flex-col md:flex-col-reverse mt-8 md:mt-0'>
