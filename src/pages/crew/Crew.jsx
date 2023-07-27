@@ -60,10 +60,10 @@ const Crew = () => {
 
                     <div className='lg:order-1 flex flex-col md:flex-col-reverse mt-8 md:mt-0'>
                         <div className='flex gap-4 items-center justify-center lg:justify-start md:mt-10 lg:mt-[88px]'>
-                            <p onClick={() => { setIndex(0); }} className={`w-[10px] h-[10px] lg:w-4 lg:h-4 duration-500 ${index === 0 ? "bg-white scale-x-110" : "bg-white/30"} cursor-pointer rounded-full overflow-hidden`}></p>
-                            <p onClick={() => { setIndex(1); }} className={`w-[10px] h-[10px] lg:w-4 lg:h-4 duration-500 ${index === 1 ? "bg-white scale-x-110" : "bg-white/30"} cursor-pointer rounded-full overflow-hidden`}></p>
-                            <p onClick={() => { setIndex(2); }} className={`w-[10px] h-[10px] lg:w-4 lg:h-4 duration-500 ${index === 2 ? "bg-white scale-x-110" : "bg-white/30"} cursor-pointer rounded-full overflow-hidden`}></p>
-                            <p onClick={() => { setIndex(3); }} className={`w-[10px] h-[10px] lg:w-4 lg:h-4 duration-500 ${index === 3 ? "bg-white scale-x-110" : "bg-white/30"} cursor-pointer rounded-full overflow-hidden`}></p>
+                            <p onClick={() => { setIndex(0); }} className={`w-[10px] h-[10px] lg:w-4 lg:h-4 duration-500 ${index === 0 ? "bg-white scale-110" : "bg-white/30"} cursor-pointer rounded-full overflow-hidden`}></p>
+                            <p onClick={() => { setIndex(1); }} className={`w-[10px] h-[10px] lg:w-4 lg:h-4 duration-500 ${index === 1 ? "bg-white scale-110" : "bg-white/30"} cursor-pointer rounded-full overflow-hidden`}></p>
+                            <p onClick={() => { setIndex(2); }} className={`w-[10px] h-[10px] lg:w-4 lg:h-4 duration-500 ${index === 2 ? "bg-white scale-110" : "bg-white/30"} cursor-pointer rounded-full overflow-hidden`}></p>
+                            <p onClick={() => { setIndex(3); }} className={`w-[10px] h-[10px] lg:w-4 lg:h-4 duration-500 ${index === 3 ? "bg-white scale-110" : "bg-white/30"} cursor-pointer rounded-full overflow-hidden`}></p>
                         </div>
                         <div className='w-[327px] md:w-[592px] h-full mt-8 md:mt-[60px] flex flex-col items-center lg:items-start'>
 
