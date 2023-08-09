@@ -64,7 +64,7 @@ const NavBar = () => {
 
                 <img onClick={() => { setMenu((current) => !current); }} className='cursor-pointer z-40' src={menu ? close : ham} alt="menu" />
 
-                <div className={`fixed z-30 w-64 ${menu ? "right-0" : "-right-[700px]"} h-screen flex flex-col gap-8 pt-28 pl-8 pr-0.5 overflow-hidden backdrop-blur-2xl bg-white/10 top-0 duration-500 text-white/70`}>
+                <div className={`fixed z-30 w-64 ${            menu ? "right-0 ease-in" : "-right-[400px] ease-out"          } h-screen flex flex-col gap-8 pt-28 pl-8 pr-0.5 overflow-hidden backdrop-blur-2xl bg-white/10 top-0 duration-500 text-white/70`}>
                     <NavLink onClick={() => setMenu(false)} to={"/"} className='flex h-8 items-center border-r-4 border-transparent focus:border-white hover:border-white/25 text-base tracking-[2.7px] font-thin font-Barlow'><span className='font-bold mr-2 text-white'>00</span> HOME</NavLink>
                     <NavLink onClick={() => { setMenu(false); }} to={"/destination"} className='flex h-8 items-center border-r-4 border-transparent focus:border-white hover:border-white/25 text-base tracking-[2.7px] font-thin font-Barlow'><span className='font-bold mr-2 text-white'>01</span> DESTINATION</NavLink>
                     <NavLink onClick={() => setMenu(false)} to={"/crew"} className='flex h-8 items-center border-r-4 border-transparent focus:border-white hover:border-white/25 text-base tracking-[2.7px] font-thin font-Barlow'><span className='font-bold mr-2 text-white'>02</span> CREW</NavLink>
